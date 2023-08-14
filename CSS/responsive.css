@@ -66,7 +66,7 @@
 
 @media only screen and (min-width:320px) and (max-width:420px) {
     header {
-        height: 130vh;
+        height: 110vh;
         clip-path: polygon(100% 0, 100% 100%, 72% 96%, 0 100%, 0 0);
     }
     .hero {
@@ -353,6 +353,9 @@
     }
 }
 
+
+/* freelancer */
+
 @media only screen and (min-width:921px) and (max-width:1260px) {
     #services {
         display: flex;
@@ -371,5 +374,84 @@
     }
     .sub-services p {
         font-size: 16px;
+    }
+}
+
+@media only screen and (min-width:621px) and (max-width:920px) {
+    .freelancer {
+        height: 360px;
+        clip-path: polygon(100% 0, 100% 100%, 72% 80%, 0 100%, 0 0);
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:620px) {
+    .freelancer {
+        height: 360px;
+        clip-path: polygon(100% 0, 100% 100%, 72% 86%, 0 100%, 0 0);
+    }
+}
+
+
+/* contact */
+
+@media only screen and (min-width:320px) and (max-width:420px) {
+    #contact {
+        display: block;
+    }
+    .sub-contact {
+        width: 100%;
+        padding: 22px;
+    }
+    .sub-contact ion-icon {
+        font-size: 30px;
+    }
+    .contact p {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width:421px) and (max-width:520px) {
+    #contact {
+        display: block;
+    }
+    .sub-contact {
+        width: 100%;
+        padding: 20px;
+    }
+    .contact p {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width:521px) and (max-width:720px) {
+    #contact {
+        display: block;
+    }
+    .sub-contact {
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+    .sub-contact ion-icon {
+        font-size: 30px;
+    }
+    .contact p {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width:721px) and (max-width:920px) {
+    #contact {
+        display: flex;
+    }
+    .sub-contact {
+        width: 48%;
+        padding: 10px;
+    }
+    .sub-contact ion-icon {
+        font-size: 30px;
+    }
+    .contact p {
+        margin-bottom: 20px;
     }
 }

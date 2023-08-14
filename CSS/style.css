@@ -323,7 +323,7 @@ nav .humberger,
     clip-path: polygon(100% 0, 100% 100%, 72% 78%, 0 100%, 0 0);
     align-items: center;
     text-align: center;
-    height: 50vh;
+    height: 360px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
