@@ -1,77 +1,375 @@
-@media only screen and (min-width:320px) and (max-width:720px){
-    nav{
+@media only screen and (min-width:320px) and (max-width:720px) {
+    nav {
         overflow: hidden;
     }
-    nav ul{
-        position:fixed;
-        width:100%;
-        height:100vh;
-        left:120%;
-        top:0;
-        bottom:0;
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 120%;
+        top: 0;
+        bottom: 0;
         text-align: center;
-        display:block;
-        padding-top:52px;
+        display: block;
+        padding-top: 52px;
         background: var(--dark);
-        transition:0.3s linear;
-        
+        transition: 0.3s linear;
     }
-    nav ul li{
-        display:block !important;
-        margin:10px;
+    nav ul li {
+        display: block !important;
+        margin: 10px;
     }
-    nav ul button{
-        margin-top:4px;
-        margin-left:-2px;
+    nav ul button {
+        margin-top: 4px;
+        margin-left: -2px;
     }
-    nav .humberger{
-        display:block;
-        margin-right:10px;
+    nav .humberger {
+        display: block !important;
+        margin-right: 10px;
+        z-index: 10;
     }
-    nav ul.active{
-        left:0;
-    }
-    header{
-        height:100vh;
+    nav ul.active {
+        left: 0;
     }
 }
-@media only screen and (min-width:620px) and (max-width:980px)
-{
-    .sub-hero-image{
-        width:40%;
+
+@media only screen and (min-width:621px) and (max-width:980px) {
+    header {
+        height: 100vh;
+        clip-path: polygon(100% 0, 100% 100%, 72% 86%, 0 100%, 0 0);
     }
-    .sub-hero-image img{
-        width:350px;
+    .sub-hero-image {
+        width: 40%;
     }
-    .sub-hero-text{
-        width:50%;
-        padding:10px;
+    .sub-hero-image img {
+        width: 350px;
     }
-    .sub-hero-text h5{
-        font-size:16px;
+    .sub-hero-text {
+        width: 50%;
+        padding: 10px;
     }
-    .sub-hero-text h1{
-        font-size:22px;
+    .sub-hero-text h5 {
+        font-size: 16px;
     }
-    .sub-hero-text p{
-        width:80%;
-        font-size:12px;
+    .sub-hero-text h1 {
+        font-size: 22px;
+    }
+    .sub-hero-text p {
+        width: 80%;
+        font-size: 12px;
     }
     .sub-hero-text button {
-        padding:18px;
-        font-size:14px;
+        padding: 18px;
+        font-size: 14px;
     }
 }
-@media only screen and (min-width:320px) and (max-width:619px)
-{
-    .hero{
-        display:block;
 
+@media only screen and (min-width:320px) and (max-width:420px) {
+    header {
+        height: 130vh;
+        clip-path: polygon(100% 0, 100% 100%, 72% 96%, 0 100%, 0 0);
     }
-    .sub-hero-image{
-        width:90%;
+    .hero {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
-    .sub-hero-text{
-        width:90%;
+    .sub-hero-image {
+        width: 100%;
+    }
+    .sub-hero-image img {
+        width: 50%;
+    }
+    .sub-hero-text {
+        width: 100%;
+    }
+    .sub-hero-text h1 {
+        font-size: 30px;
+    }
+    .sub-hero-text p {
+        font-size: 14px;
+        width: 100%;
+    }
+    .sub-hero-text button {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:421px) and (max-width:620px) {
+    header {
+        height: 110vh;
+        clip-path: polygon(100% 0, 100% 100%, 72% 96%, 0 100%, 0 0);
+    }
+    .hero {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub-hero-image {
+        width: 100%;
+    }
+    .sub-hero-image img {
+        width: 50%;
+    }
+    .sub-hero-text {
+        width: 100%;
+    }
+    .sub-hero-text h1 {
+        font-size: 30px;
+    }
+    .sub-hero-text p {
+        font-size: 14px;
+        width: 100%;
+    }
+    .sub-hero-text button {
+        font-size: 12px;
+    }
+}
+
+
+/* about */
+
+@media only screen and (min-width:320px) and (max-width:420px) {
+    .sub-about {
+        display: block;
+    }
+    .sub-about-image {
+        width: 100%;
+    }
+    .sub-about-text {
+        width: 100%;
+    }
+    .sub-about-text p {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:421px) and (max-width:520px) {
+    .sub-about {
+        display: block;
+    }
+    .sub-about-image {
+        width: 100%;
+    }
+    .sub-about-text {
+        width: 100%;
+    }
+    .sub-about-text p {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:521px) and (max-width:620px) {
+    .sub-about {
+        display: flex;
+        width: 100%;
+        justify-content: left;
+        align-items: center;
+        vertical-align: middle;
+    }
+    .sub-about-image {
+        width: 40%;
+    }
+    .sub-about-image img {
+        width: 100%;
+    }
+    .sub-about-text {
+        width: 60%;
+        padding-left: 20px;
+    }
+    .sub-about-text p {
+        width: 90%;
+        font-size: 12px;
+    }
+    .sub-about-text h5 {
+        font-size: 22px;
+        padding: 0;
+    }
+    .sub-about-text h6 {
+        font-size: 18px;
+    }
+    .sub-about-text ul li ion-icon {
+        font-size: 12px;
+    }
+    .sub-about-text ul li {
+        padding: 4px 7px;
+    }
+    .sub-about-text ul {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:621px) and (max-width:920px) {
+    .sub-about {
+        display: flex;
+        width: 100%;
+        justify-content: left;
+        align-items: center;
+        vertical-align: middle;
+    }
+    .sub-about-image {
+        width: 44%;
+    }
+    .sub-about-image img {
+        width: 100%;
+    }
+    .sub-about-text {
+        width: 56%;
+        padding-left: 20px;
+    }
+    .sub-about-text p {
+        width: 86%;
+        font-size: 16px;
+    }
+    .sub-about-text h5 {
+        font-size: 28px;
+        padding: 0;
+    }
+    .sub-about-text h6 {
+        font-size: 22px;
+    }
+    .sub-about-text ul li ion-icon {
+        font-size: 16px;
+    }
+    .sub-about-text ul li {
+        padding: 6px 8px;
+    }
+}
+
+@media only screen and (min-width:921px) and (max-width:1260px) {
+    .sub-about {
+        display: flex;
+        width: 100%;
+        justify-content: left;
+        align-items: center;
+        vertical-align: middle;
+    }
+    .sub-about-image {
+        width: 50%;
+    }
+    .sub-about-image img {
+        width: 100%;
+    }
+    .sub-about-text {
+        width: 50%;
+        padding-left: 20px;
+    }
+    .sub-about-text p {
+        width: 80%;
+        font-size: 16px;
+    }
+    .sub-about-text h5 {
+        font-size: 40px;
+        padding: 0;
+    }
+    .sub-about-text h6 {
+        font-size: 28px;
+    }
+    .sub-about-text ul li ion-icon {
+        font-size: 18px;
+    }
+    .sub-about-text ul li {
+        padding: 6px 8px;
+    }
+}
+
+
+/* services */
+
+@media only screen and (min-width:320px) and (max-width:420px) {
+    #services {
+        display: block;
+    }
+    .sub-services {
+        width: 100%;
+    }
+    .sub-services ion-icon {
+        font-size: 30px;
+    }
+    .sub-services ion-icon {
+        padding: 20px;
+        margin-top: -40px;
+    }
+}
+
+@media only screen and (min-width:421px) and (max-width:520px) {
+    #services {
+        display: block;
+    }
+    .sub-services {
+        width: 100%;
+        padding: 20px;
+    }
+    .sub-services ion-icon {
+        font-size: 30px;
+    }
+    .sub-services ion-icon {
+        padding: 20px;
+        margin-top: -50px;
+    }
+}
+
+@media only screen and (min-width:521px) and (max-width:620px) {
+    #services {
+        display: flex;
+    }
+    .sub-services {
+        width: 46%;
+        padding: 10px;
+        gap: 10px;
+    }
+    .sub-services ion-icon {
+        font-size: 30px;
+    }
+    .sub-services ion-icon {
+        padding: 20px;
+        margin-top: -50px;
+    }
+    .sub-services p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:621px) and (max-width:920px) {
+    #services {
+        display: flex;
+    }
+    .sub-services {
+        width: 48%;
+        padding: 10px;
+        gap: 6px;
+    }
+    .sub-services ion-icon {
+        font-size: 30px;
+    }
+    .sub-services ion-icon {
+        padding: 20px;
+        margin-top: -50px;
+    }
+    .sub-services p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width:921px) and (max-width:1260px) {
+    #services {
+        display: flex;
+    }
+    .sub-services {
+        width: 31%;
+        padding: 10px;
+        gap: 2px;
+    }
+    .sub-services ion-icon {
+        font-size: 30px;
+    }
+    .sub-services ion-icon {
+        padding: 20px;
+        margin-top: -50px;
+    }
+    .sub-services p {
+        font-size: 16px;
     }
 }
